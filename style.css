@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+.root{
+    --secondary-colour: #0e1525;
+}
+body {
+    background-color: #0e1525;
+}
+section{
+    padding: 50px 0;
+}
+.main_btn{
+    display: inline-block;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    padding: 10px 27px;
+    background-color: transparent;
+    border: 2px solid gray;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.main_btn:hover{
+    background-color: pink;
+    border-color: aqua;
+    color: beige;
+}
+h1{
+    font-size: 54px;
+    line-height: 68px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+}
+h1 span{
+    color: blue;
+}
+h2{
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 19px;
+}
+h6{
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 19px;
+}
+p{
+    color: grey;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.subtitle{
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    background-color: antiquewhite;
+}
+input:hover,
+input:focus,
+textarea:focus,
+textarea:hover,
+button{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.header_wrapper .navbar{
+    padding: 15px 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.header_wrapper .navbar-toggler{
+    border: 0;
+    color: gray;
+    line-height: 2;
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .nav-item{
+    margin: 1 10px;
+}
+.header_wrapper .nav-item .nav-link{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    display: inline-block;
+}
+.header_wrapper .nav-item .nav-link::after{
+    position: absolute;
+    content: '';
+    left:0;
+    width:0;
+    height:2px;
+    background: palevioletred;
+    transition: 0.3s;
+    bottom: 0;
+}
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover{
+    color: white;
+}
+.banner_wrapper{
+    width: 100%;
+    height: auto;
+    min-height: 650px;
+    background-image: url("C:\Users\hp\Pictures\WhatsApp Image 2022-09-27 at 06.57.38.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0 100px 0
+}
+
+.persons-img{
+    width: 500px;
+    height: 300px;
+}
+.tourist_img{
+    width: 800px;
+    height: 350px;
+}
+.card-header{
+    text-align: center;
+    font-size: 26px;
+}
+.service_card{
+    height: 300px;
+}
+.new_york{
+    padding-left: 140px;
+}
+.hobby_list{
+    color: white;
+    font-size: 32px;
+}
+.imran_text{
+    padding-left: 202px;
+     margin-top: 30px;
+}
+/*Contact form*/
+.form-label{
+    color: white;
+}
+.form-control{
+    width: 50%;
+}
+.list-group-item {
+    
+    color: black;
+    height: 60px;
+}
+.skills{
+    text-align: center;
+}
+footer {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+  
+  .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  .social-icons li {
+    margin: 0 10px;
+  }
+  
+  .social-icons a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+  }
+  
+  .social-icons a:hover {
+    background-color: #666;
+  }
+  
+  .social-icons i {
+    font-size: 16px;
+  }
+ .services{
+    text-align: center;
+     margin-bottom: 40px;
+ }
+/*Responsiveness*/
+@media (max-width:900px) {
+    section{
+        padding: 30px 0;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .header-scrolled{
+        height: auto;
+    }
+    .header_wrapper .menu-navbar-nav{
+        text-align: center;
+        background-color: darkblue;
+        padding-bottom: 15px0;
+    }
+    .header_wrapper .nav-item ,.nav-link{
+        margin-top: 15px;
+    }
+    .banner_wrapper{
+        padding: 200px 0
+    }
+    .tourist_img{
+        width: 400px;
+    }
+    .service_card{
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .hobby_list{
+        margin-left: 50px;
+    }
+    .skills{
+    margin-left: 50px;
+    }
+    .list-group-item-primary{
+        margin-left: 50px;
+    }
+    .imran_text{
+      padding-left: 0;
+      margin-left: 10px;
+    }
+    .new_york{
+        padding-left: 0;
+    }
+    .about_me{
+        margin-top: -100px;
+        margin-left: 0;
+    }
+    .services{
+      text-align: left;
+      margin-left: 70px;
+        font-size: 42px;
+    }
+    
+}
+
+@media (max-width:600px){
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .tourist_img{
+        width: 400px;
+    }
+    .service_card{
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .hobby_list{
+        margin-left: 50px;
+    }
+    .about_me{
+        margin-left: 15px;
+    }
+    .skills{
+    margin-left: 50px;
+    }
+    .list-group-item-primary{
+        margin-left: 50px;
+    }
+    .imran_text{
+      padding-left: 0;
+      margin-left: 10px;
+    }
+    .new_york{
+        padding-left: 0;
+    }
+    .services{
+        margin-left: 20px;
+        text-align: left;
+    }
+    
+}
